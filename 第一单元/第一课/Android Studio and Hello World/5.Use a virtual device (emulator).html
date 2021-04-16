@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body>
+    <div>
+        <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/styles/agate.min.css">
+        <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/highlight.min.js"></script>
+        <script>
+            setTimeout(() => {
+                // first, find all the div.code blocks
+                document.querySelectorAll('div.code').forEach(block => {
+                    // then highlight each
+                    hljs.highlightBlock(block);
+                });
+            }, 200);
+        </script>
+        <!-- 代码 -->
+
+
+        <div class='code'>
+            <pre>
+            &lt;resources&gt;
+                &lt;string name=&quot;app_name&quot;&gt;Hello Toast&lt;/string&gt;
+                &lt;string name=&quot;button_label_toast&quot;&gt;Toast&lt;/string&gt;
+                &lt;string name=&quot;button_label_count&quot;&gt;Count&lt;/string&gt;
+                &lt;string name=&quot;count_initial_value&quot;&gt;0&lt;/string&gt;
+                &lt;string name=&quot;toast_message&quot;&gt;Hello Toast!&lt;/string&gt;
+            &lt;/resources&gt;</pre>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <div>
+        <h2>
+            任务2：创建Hello World应用
+        </h2>
+        <p>
+            在此任务中，您将创建一个显示“ Hello World”的应用程序，以验证是否正确安装了Android Studio，并学习了使用Android Studio开发的基础知识。
+        </p>
+        <h4>
+            2.1创建应用程序项目
+        </h4>
+        <ol>
+            <li> 如果尚未打开Android Studio，请打开它。</li>
+            <li> 在“欢迎使用Android Studio”主窗口中，单击“启动新的Android Studio项目”。</li>
+            <li> 在“创建Android项目”窗口中，为应用程序名称输入Hello World。
+                <br>
+                <div class="img-div">
+                    <img class="img-big" src="img/792bf9606d44dbf5.png" alt="创建Android项目窗口" srcset="">
+                </div>
+            </li>
+            <li>验证默认项目位置是您要存储Hello World应用程序和其他Android Studio项目的位置，还是将其更改为首选目录。</li>
+            <li> 接受默认的android.example.com作为公司域，或创建一个唯一的公司域。</li>
+        </ol>
+
+        <p>
+            如果您不打算发布您的应用程序，则可以接受默认设置。请注意，稍后更改应用程序的程序包名称是额外的工作。</p>
+        <ol type="1" start="6">
+            <li> 取消选中“包括C ++支持”和“包括Kotlin支持”的选项，然后单击“下一步”。</li>
+            <li>在“目标Android设备”屏幕上，应选择“手机”和“平板电脑”。<br> 确保将API 15：Android 4.0.3 IceCreamSandwich设置为Minimum
+                SDK；
+                <br> 如果不是，请使用弹出菜单进行设置。
+                选择应用程序的目标Android设备
+                <br>
+                <div class="img-div">
+                    <img class="img-big" src="img/88ac6958ba506d0.png" alt="" srcset="">
+                </div>
+
+            </li>
+        </ol>
+
+        <p>
+            这些是本课程课程中示例所使用的设置。在撰写本文时，这些设置使您的Hello World应用程序与Google Play商店中97％的活动Android设备兼容。
+        </p>
+
+        <ol start="8">
+            <li>
+                取消选中“包括即时应用程序支持”和所有其他选项。然后单击“下一步”。如果您的项目需要用于所选目标SDK的其他组件，则Android Studio将自动安装它们。
+            </li>
+            <li> 出现“添加活动”窗口。活动是用户可以做的一件专注的事情。它是所有Android应用程序的重要组成部分。活动通常具有与之关联的布局，该布局定义UI元素在屏幕上的显示方式。 Android
+                Studio提供了活动模板来帮助您入门。对于Hello World项目，选择“清空活动”，如下所示，然后单击“下一步”。
+                <div class="img-div">
+                    <img class="img-big" src="img/7d46fc3d7d5c606c.png" alt="" srcset="">
+                </div>
+            </li>
+        </ol>
+
+        <ol start="10">
+            <li>
+                出现“配置活动”屏幕（根据您在上一步中选择的模板而有所不同）。默认情况下，模板提供的空活动名为MainActivity。您可以根据需要进行更改，但是本课程使用MainActivity。
+                配置活动
+                <div class="img-div">
+                    <img class="img-big" src="img/caacdb52afab2187.png" alt="" srcset="">
+                </div>
+            </li>
+        </ol>
+        <ol start="11">
+            <li>
+
+                确保已选中“生成布局文件”选项。布局名称默认情况下为activity_main。您可以根据需要进行更改，但是本课程使用activity_main。
+
+            </li>
+            <li>
+                确保已选中“向后兼容性（App Compat）”选项。这样可以确保您的应用与Android的先前版本向后兼容。
+
+            </li>
+            <li>
+                单击完成。
+            </li>
+        </ol>
+        <p>
+            Android Studio为你的项目创建一个文件夹，并使用Gradle构建项目(这可能需要一些时间)。
+        </p>
+        <p><strong> 提示：</strong>有关详细信息，请参见
+            <a href="https://developer.android.com/studio/build/index.html">“配置构建开发人员”</a>页面。
+        </p>
+
+        <p> 您可能还会看到带有键盘快捷键和其他有用提示的“每日提示”消息。单击关闭以关闭消息。</p>
+
+        <p> 出现Android Studio编辑器。按着这些次序：</p>
+        <ol>
+            <li>单击activity_main.xml选项卡以查看布局编辑器。</li>
+            <li>单击布局编辑器的“设计”选项卡（如果尚未选择），以显示布局的图形表示，如下所示。
+
+                <div class="img-div">
+                    <img class="img-big" src="img/aa3798d703bfdcbd.png" alt="" srcset="">
+                </div>
+            </li>
+        </ol>
+        <ol start="3">
+
+            <li>
+
+                单击MainActivity.java选项卡以查看代码编辑器，如下所示。
+
+                <div class="img-div">
+                    <img class="img-big" src="img/c8e5112d81bd1528.png" alt=" 代码编辑器" srcset="">
+                </div>
+            </li>
+        </ol>
+
+
+        <h4>
+            2.2浏览项目> Android窗格
+        </h4>
+        <p> 在本实践中，您将探索如何在Android Studio中组织项目。</p>
+        <ol>
+            <li>
+
+                如果尚未选择，请单击Android Studio窗口左侧垂直标签栏中的“项目”标签。出现“项目”窗格。
+            </li>
+            <li>
+
+                要在标准Android项目层次结构中查看项目，请从“项目”窗格顶部的弹出菜单中选择“ Android”，如下所示。
+                项目> Android窗格
+                <div class="img-div">
+                    <img class="img-big" src="img/7de27bcc3ac9d644.png" alt="" srcset="">
+                </div>
+            </li>
+        </ol>
+        <p class="attention"> 注意：本章和其他章节将“项目”窗格（设置为Android）称为“项目”>“ Android”窗格。</p>
+
+        <h4> 2.3浏览Gradle Scripts文件夹</h4>
+        <p> Android Studio中的Gradle构建系统可轻松将外部二进制文件或其他库模块作为依赖项包含在构建中。</p>
+
+
+
+        <p> 首次创建应用程序项目时，将显示“项目”>“ Android”窗格，并展开了“ Gradle Scripts”文件夹，如下所示。</p>
+        <div class="img-div">
+            <img class="img-big" src="img/ed05bf9493dbf08d.png" alt="Gradle Scripts文件夹" srcset="">
+        </div>
+
+        <p> 请按照以下步骤探索Gradle系统：</p>
+
+        <ol>
+            <li>
+                如果“ Gradle Scripts”文件夹没有展开，请单击三角形以将其展开。
+            </li>
+        </ol>
+        <p> 该文件夹包含构建系统所需的所有文件。</p>
+        <ol start="2">
+            <li>
+                查找build.gradle（Project：HelloWorld）文件。
+            </li>
+        </ol>
+
+        <p>
+            在这里，您将找到构成项目的所有模块所共有的配置选项。每个Android Studio项目都包含一个顶级Gradle构建文件。在大多数情况下，您无需对此文件进行任何更改，但是了解其内容仍然很有用。
+        </p>
+
+
+        <p> 默认情况下，顶级构建文件使用buildscript块定义项目中所有模块通用的Gradle存储库和依赖项。如果您的依赖项不是本地库或文件树，则Gradle会在此文件的存储库块中指定的任何在线存储库中查找文件。默认情况下，新的Android
+            Studio项目将JCenter和Google（包括Google Maven存储库）声明为存储库位置：
+
+        </p>
+
+        <pre>
+            allprojects {
+                repositories {
+                    google()
+                    jcenter()
+                }
+            }</pre>
+        <ol start="3">
+            <li>
+                查找build.gradle（Module：app）文件。
+            </li>
+        </ol>
+
+        <p>
+            除了项目级别的build.gradle文件之外，每个模块都有自己的build.gradle文件，该文件可让您为每个特定模块配置构建设置（HelloWorld应用程序只有一个模块）。配置这些构建设置可让您提供自定义打包选项，例如其他构建类型和产品口味。您还可以覆盖AndroidManifest.xml文件或顶级build.gradle文件中的设置。
+
+        </p>
+        <p>
+            此文件通常是更改应用程序级配置（例如在“依赖项”部分中声明依赖项）时要编辑的文件。您可以使用几种不同的依赖项配置之一来声明库依赖项。每个依赖项配置为Gradle提供有关如何使用该库的不同说明。例如，语句实现fileTree（dir：'libs'，include：['*
+            .jar']）在libs目录中添加所有“ .jar”文件的依赖项。
+
+        </p>
+
+        <p>
+            以下是HelloWorld应用程序的build.gradle（Module：app）文件：
+
+        </p>
+
+        <pre>
+    apply plugin: 'com.android.application'
+
+    android {
+        compileSdkVersion 26
+        defaultConfig {
+            applicationId "com.example.android.helloworld"
+            minSdkVersion 15
+            targetSdkVersion 26
+            versionCode 1
+            versionName "1.0"
+            testInstrumentationRunner 
+                       "android.support.test.runner.AndroidJUnitRunner"
+        }
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles 
+                         getDefaultProguardFile('proguard-android.txt'), 
+                         'proguard-rules.pro'
+            }
+        }
+    }
+    
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation 'com.android.support:appcompat-v7:26.1.0'
+        implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+        testImplementation 'junit:junit:4.12'
+        androidTestImplementation 'com.android.support.test:runner:1.0.1'
+        androidTestImplementation  'com.android.support.test.espresso:espresso-core:3.0.1'
+    }</pre>
+        <ol start="4">
+            <li>
+                单击三角形以关闭Gradle脚本。
+
+
+            </li>
+        </ol>
+
+        <h4>
+            2.4探索app和res文件夹
+        </h4>
+
+        <p>
+            该应用程序的所有代码和资源都位于app和res文件夹中。
+        </p>
+
+        <ol>
+            <li>
+                展开app文件夹，java文件夹和com.example.android.helloworld文件夹，以查看MainActivity java文件。双击该文件可在代码编辑器中将其打开。
+                应用文件夹
+                <div class="img-div">
+                    <img class="img-small" src="img/5d953745a96d5f71.png" alt="Gradle Scripts文件夹" srcset="">
+                </div>
+            </li>
+        </ol>
+
+        <p>
+            Java文件夹在三个子文件夹中包含Java类文件，如上图所示。
+            com.example.hello.helloworld（或您指定的域名）文件夹包含应用程序包的所有文件。其他两个文件夹用于测试，并在另一堂课中进行介绍。对于Hello
+            World应用程序，只有一个软件包，其中包含MainActivity.java。通常，用户看到的第一个Activity（屏幕）的名称也将初始化应用程序级资源，该名称通常称为MainActivity（在Project>
+            Android窗格中省略了文件扩展名）。
+        </p>
+        <ol start="2">
+            <li>
+
+                展开res文件夹和布局文件夹，然后双击activity_main.xml文件以在布局编辑器中将其打开。
+                res文件夹
+                <div class="img-div">
+                    <img class="img-small" src="img/96b04ce46a09016d.png" alt="Gradle Scripts文件夹" srcset="">
+                </div>
+            </li>
+        </ol>
+
+        <p>
+            res文件夹包含资源，例如布局，字符串和图像。活动通常与定义为XML文件的UI视图的布局相关联。该文件通常以其活动命名。
+        </p>
+
+        <h4>
+            2.5探索清单文件夹
+        </h4>
+
+        <p>
+            清单文件夹中包含的文件可向Android系统提供有关您的应用程序的基本信息，系统必须具备该文件才能运行任何应用程序代码。
+
+        </p>
+        <ol>
+            <li> 展开清单文件夹。</li>
+            <li> 打开AndroidManifest.xml文件。</li>
+        </ol>
+
+        <p> AndroidManifest.xml文件描述了Android应用程序的所有组件。应用程序的所有组件（例如每个Activity）都必须在此XML文件中声明。在其他课程中，您将修改此文件以添加功能和功能许可。有关介绍，请<a target="blank" href="https://developer.android.com/guide/topics/manifest/manifest-intro.html"> 参阅AppManifest概述</a>。</p>
+
+    </div>
+  </body>
+</html>

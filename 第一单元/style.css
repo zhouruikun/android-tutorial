@@ -1,0 +1,60 @@
+body {
+  color: #5c5c5c;
+}
+
+a {
+  text-decoration: none;
+  color: #3583eb;
+}
+.a-doc-link {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 3px;
+  background-color: #e9eaef;
+  color: #1a55bf;
+  font-weight: bold;
+}
+.span-doc {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 3px;
+  background-color: #e9eaef;
+  color: #444548;
+  font-weight: bold;
+}
+/* 注意框样式 */
+.attention {
+  border-color: #137333;
+  border-left: 4px solid;
+  border-radius: 4px;
+  padding: 14px;
+  background-color: #e6f4ea;
+}
+
+/* 图像元素外层盒子样式 */
+.img-div {
+  padding: 18px;
+  text-align: center;
+}
+
+/* 大图 */
+.img-big {
+  width: 600px;
+}
+
+/* 中图 */
+.img-mid {
+  width: 400px;
+}
+
+/* 小图 */
+.img-small {
+  width: 300px;
+}
+
+/* 手机图 */
+.img-phone {
+  width: 340px;
+}
+
+ 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body>
+    <div>
+        <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/styles/default.min.css">
+        <script src="https://unpkg.com/@highlightjs/cdn-assets@10.7.2/highlight.min.js"></script>
+        <script>
+            setTimeout(() => {
+                // first, find all the div.code blocks
+                document.querySelectorAll('div.code').forEach(block => {
+                    // then highlight each
+                    hljs.highlightBlock(block);
+                });
+            }, 200);
+        </script>
+        <!-- 代码 -->
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
